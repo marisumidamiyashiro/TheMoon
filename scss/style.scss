@@ -1,0 +1,24 @@
+
+/* VARIABLES */
+
+$font-body-color: rgba(255, 255, 255, 1);
+$stars-color: rgba(254, 255, 194, 0.8);
+
+/* FONTS */
+
+$font-family-title: "tachyon", sans-serif;
+
+// BREAKPOINTS
+
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
+
+/* IMPORTS */
+
+@import "partials/toc";
+@import "partials/layout";
+@import "partials/media";
+@import "partials/structure";
+@import "partials/typography";
+@import "partials/stars";

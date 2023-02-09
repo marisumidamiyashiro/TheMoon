@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+
+/* SWIPER */
+
+.swiper {
+    width: 100vw;
+    height: 100vh;
+
+    .swiper-slide {
+        background-color: black;
+    }
+
+    .slide-1 {
+        h1 {
+            margin: 2em 0 0 5em;
+        }
+        img {
+            position: absolute;
+        }
+    }
+}
+
+/* PAGINATION */
+
+.swiper-pagination-bullet {
+    background-color: $stars-color !important;
+    padding: .5em
+}

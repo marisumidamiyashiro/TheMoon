@@ -1,0 +1,32 @@
+/* RESET BODY */
+body {
+    margin: 0;
+}
+
+/* CONTAINER */
+
+.swiper {
+    margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+
+/* RESPONSVIE TYPE */ 
+
+// SMALL
+
+body {
+    font-size: 87.5%;
+}
+
+@media (min-width: $breakpoint-small) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: $breakpoint-medium) {
+    body {
+        font-size: 112.5%;
+    }
+}
