@@ -17,7 +17,7 @@
     height: 1px;
     box-shadow: randomShadows(1000);
     transition: all .2s linear;
-    animation: animStar 250s linear infinite;
+    animation: animStar 150s linear infinite;
 }
 
 .stars2 {
@@ -25,7 +25,7 @@
     height: 2px;
     box-shadow: randomShadows(1000);
     transition: all .2s linear;
-    animation: animStar 50s linear infinite;
+    animation: animStar 100s linear infinite;
 }
 
 .stars3 {
@@ -33,7 +33,6 @@
     height: 3px;
     box-shadow: randomShadows(1000);
     transition: all .2s linear;
-    animation: animStar 150s linear infinite;
 }
 
 @keyframes animStar {

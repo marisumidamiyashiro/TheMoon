@@ -4,7 +4,6 @@ const swiper = new Swiper('.swiper', {
     direction: 'vertical',
     mousewheel: true,
     loop: true,
-    parallax: true,
     effect: 'fade',
     
 
