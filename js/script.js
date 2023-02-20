@@ -2,10 +2,10 @@
 // SWIPERJS 
 
 const swiper = new Swiper('.swiper', {
-    direction: 'vertical',
+    direction: 'horizontal',
     mousewheel: true,
     loop: true,
-    effect: 'fade',
+    effect: 'slide',
     
 
     pagination: {
@@ -13,7 +13,7 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
     },
 
-});
-
 // SCROLL-TRIGGERED ANIMATIONS
+
+});
 

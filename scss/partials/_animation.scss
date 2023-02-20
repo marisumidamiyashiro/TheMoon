@@ -9,6 +9,10 @@
     img {
         animation: slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
+
+    P {
+        animation: puff-in-left 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
 }
 
 /* KEYFRAMES */
@@ -47,6 +51,24 @@
         opacity: 1;
     }
 }
+
+/* PUFF IN */
+
+@keyframes puff-in-left {
+    0% {
+        transform: scale(2);
+        transform-origin: 0% 50%;
+        filter: blur(4px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        transform-origin: 0% 50%;
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
 
 
 

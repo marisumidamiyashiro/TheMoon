@@ -33,6 +33,7 @@
     height: 3px;
     box-shadow: randomShadows(1000);
     transition: all .2s linear;
+    animation: animStar 300s linear infinite;
 }
 
 @keyframes animStar {
