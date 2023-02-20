@@ -1,3 +1,4 @@
 # themoon
+My personal framework for new projects such as a portfolio site or final project for ART 249
 
-[view site] (https://marisumidamiyashiro.github.io/themoon/)
+[Demo](https://marisumidamiyashiro.github.io/themoon/)
