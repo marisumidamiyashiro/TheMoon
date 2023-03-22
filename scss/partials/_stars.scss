@@ -1,15 +1,23 @@
 
-
 @function randomShadows($count) {
-    $randomX: random(3000);
-    $randomY: random(3000);
+    $numberofstars: 3000;
+    $randomX: random($numberofstars);
+    $randomY: random($numberofstars);
     $boxShadow: '#{$randomX}px #{$randomY}px #{$stars-color}';
     @for $i from 1 through $count {
-    $randomX: random(3000);
-    $randomY: random(3000);
+    $randomX: random($numberofstars);
+    $randomY: random($numberofstars);
     $boxShadow : $boxShadow + ', #{$randomX}px #{$randomY}px #{$stars-color}';
     }
     @return unquote($boxShadow);
+}
+
+.stars-bg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .stars1 {
@@ -38,5 +46,5 @@
 
 @keyframes animStar {
     from {transform: translateX(0px)}
-    to {transform: translateX(-2000px)}
+    to {transform: translateX(-100vh)}
 }

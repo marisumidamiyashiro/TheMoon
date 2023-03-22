@@ -23,16 +23,18 @@
 
     <header class="home">
         <div class="site-header">
-            <h3>l o g o</h3>
+            <a href="index.html"><img src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg" alt="NASA logo" width="100px"></a>
+            
             <ul>
-                <a href="#"><li>Link 1</li></a>
-                <a href="#"><li>Link 2</li></a>
-                <a href="#"><li>Link 3</li></a>
-                <a href="#"><li>Link 4</li></a>
-                <a href="#"><li>Link 5</li></a>
-                <a href="#"><li>Link 6</li></a>
-                <a href="#"><li>Link 7</li></a>
-                <a href="#"><li>Link 8</li></a>
+                <a href="#slide1" onclick="wiper.slideTo(1)"><li>The Moon</li></a>
+                <a href="#slide2" onclick="wiper.slideTo(2)"><li>Full Moon</li></a>
+                <a href="#slide3" onclick="wiper.slideTo(3)"><li>Waning Gibbous</li></a>
+                <a href="#slide4" onclick="wiper.slideTo(4)"><li>Last Quarter</li></a>
+                <a href="#slide5" onclick="wiper.slideTo(5)"><li>Waning Crescent</li></a>
+                <a href="#slide6" onclick="wiper.slideTo(6)"><li>New Moon</li></a>
+                <a href="#slide7" onclick="wiper.slideTo(7)"><li>Waxing Crescent</li></a>
+                <a href="#slide8" onclick="wiper.slideTo(8)"><li>First Quarter</li></a>
+                <a href="#slide9" onclick="wiper.slideTo(9)"><li>Waxing Gibbous</li></a>
             </ul>
         </div>
     </header>
@@ -40,144 +42,151 @@
     <main>
         <div class="swiper">
             <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <div class="stars1"></div>
-                    <div class="stars2"></div>
-                    <div class="stars3"></div>
-                    
-                    <img src="img/fullmoon.png" alt="Full Moon">
-                    <h1>The Moon</h1>
-                    <div class="body-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem eum recusandae reprehenderit iusto explicabo quis quisquam? Saepe, totam minima laudantium aspernatur consequuntur ipsa? Molestias, autem quos ipsam, quae expedita non sint quod earum voluptates repudiandae deserunt natus et? Maiores, ipsa et rerum ad animi repellendus itaque aperiam. Necessitatibus, deleniti!</p>
+                <div class="swiper-slide" data-hash="slide1">
+                    <div class="phase-wrapper">
+                        <div class="moon-wrapper">
+                            <img src="img/fullmoon.png" alt="Full Moon">
+                        </div>
+                        <div class="text-wrapper">
+                            <h1>The Moon</h1>
+                            <div class="body-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem eum recusandae reprehenderit iusto explicabo quis quisquam? Saepe, totam minima laudantium aspernatur consequuntur ipsa? Molestias, autem quos ipsam, quae expedita non sint quod earum voluptates repudiandae deserunt natus et? Maiores, ipsa et rerum ad animi repellendus itaque aperiam. Necessitatibus, deleniti!</p>
+                            </div>
+                        </div>
                     </div>
-                
                 </div>
 
-                <div class="swiper-slide">
-                    <div class="stars1"></div>
-                    <div class="stars2"></div>
-                    <div class="stars3"></div>
-                    
-                    <img src="img/fullmoon.png" alt="Full Moon">
-                    <h1>Full Moon</h1>
-                    <div class="body-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem eum recusandae reprehenderit iusto explicabo quis quisquam? Saepe, totam minima laudantium aspernatur consequuntur ipsa? Molestias, autem quos ipsam, quae expedita non sint quod earum voluptates repudiandae deserunt natus et? Maiores, ipsa et rerum ad animi repellendus itaque aperiam. Necessitatibus, deleniti!</p>
+                <div class="swiper-slide" data-hash="slide2">
+                    <div class="phase-wrapper">
+                        <div class="moon-wrapper">
+                            <img src="img/fullmoon.png" alt="Full Moon">
+                        </div>
+                        <div class="text-wrapper">
+                            <h1>Full Moon</h1>
+                            <div class="body-text">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, fugiat? Quos, minus nulla dicta maiores officiis hic tenetur dolorem. Saepe libero harum animi repudiandae vel. Modi incidunt tenetur neque reprehenderit mollitia illum, aspernatur commodi iure quia magni quas culpa doloremque, nulla deleniti debitis dicta doloribus dolore sint hic nihil adipisci!</p>
+                            </div>
+                        </div>
                     </div>
-                
                 </div>
 
-                <div class="swiper-slide">
-                    <div class="stars1"></div>
-                    <div class="stars2"></div>
-                    <div class="stars3"></div>
-                    
-                    <img src="img/waninggibbous.png" alt="Waning Gibbous">
-                    <h1>Waning Gibbous</h1>
-                    <div class="body-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem eum recusandae reprehenderit iusto explicabo quis quisquam? Saepe, totam minima laudantium aspernatur consequuntur ipsa? Molestias, autem quos ipsam, quae expedita non sint quod earum voluptates repudiandae deserunt natus et? Maiores, ipsa et rerum ad animi repellendus itaque aperiam. Necessitatibus, deleniti!</p>
+                <div class="swiper-slide" data-hash="slide3">
+                    <div class="phase-wrapper">
+                        <div class="moon-wrapper">
+                            <img src="img/waninggibbous.png" alt="Waning Gibbous">
+                        </div>
+                        <div class="text-wrapper">
+                            <h1>Waning Gibbous</h1>
+                            <div class="body-text">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, fugiat? Quos, minus nulla dicta maiores officiis hic tenetur dolorem. Saepe libero harum animi repudiandae vel. Modi incidunt tenetur neque reprehenderit mollitia illum, aspernatur commodi iure quia magni quas culpa doloremque, nulla deleniti debitis dicta doloribus dolore sint hic nihil adipisci!</p>
+                            </div>
+                        </div>
                     </div>
-                
                 </div>
 
-                <div class="swiper-slide">
-                    <div class="stars1"></div>
-                    <div class="stars2"></div>
-                    <div class="stars3"></div>
-                    
-                        <img src="img/lastquarter.png" alt="Last Quarter">
-                        <h1>Last Quarter </h1>
-                        <div class="body-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem eum recusandae reprehenderit iusto explicabo quis quisquam? Saepe, totam minima laudantium aspernatur consequuntur ipsa? Molestias, autem quos ipsam, quae expedita non sint quod earum voluptates repudiandae deserunt natus et? Maiores, ipsa et rerum ad animi repellendus itaque aperiam. Necessitatibus, deleniti!</p>
+                <div class="swiper-slide" data-hash="slide4">
+                    <div class="phase-wrapper">
+                        <div class="moon-wrapper">
+                            <img src="img/lastquarter.png" alt="Last Quarter">
                         </div>
-                
+                        <div class="text-wrapper">
+                            <h1>Last Quarter</h1>
+                            <div class="body-text">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, fugiat? Quos, minus nulla dicta maiores officiis hic tenetur dolorem. Saepe libero harum animi repudiandae vel. Modi incidunt tenetur neque reprehenderit mollitia illum, aspernatur commodi iure quia magni quas culpa doloremque, nulla deleniti debitis dicta doloribus dolore sint hic nihil adipisci!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="swiper-slide">
-                    <div class="stars1"></div>
-                    <div class="stars2"></div>
-                    <div class="stars3"></div>
-                    
-                        <img src="img/waningcrescent.png" alt="Waning Crescent">
-                        <h1>Waning Crescent</h1>
-                        <div class="body-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem eum recusandae reprehenderit iusto explicabo quis quisquam? Saepe, totam minima laudantium aspernatur consequuntur ipsa? Molestias, autem quos ipsam, quae expedita non sint quod earum voluptates repudiandae deserunt natus et? Maiores, ipsa et rerum ad animi repellendus itaque aperiam. Necessitatibus, deleniti!</p>
+                <div class="swiper-slide" data-hash="slide5">
+                    <div class="phase-wrapper">
+                        <div class="moon-wrapper">
+                            <img src="img/waningcrescent.png" alt="Waning Crescent">
                         </div>
-                
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="stars1"></div>
-                    <div class="stars2"></div>
-                    <div class="stars3"></div>
-                    
-                        <img src="img/newmoon.png" alt="New Moon">
-                        <h1>New Moon</h1>
-                        <div class="body-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem eum recusandae reprehenderit iusto explicabo quis quisquam? Saepe, totam minima laudantium aspernatur consequuntur ipsa? Molestias, autem quos ipsam, quae expedita non sint quod earum voluptates repudiandae deserunt natus et? Maiores, ipsa et rerum ad animi repellendus itaque aperiam. Necessitatibus, deleniti!</p>
+                        <div class="text-wrapper">
+                            <h1>Waning Crescent</h1>
+                            <div class="body-text">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe voluptates voluptatem, quibusdam nobis velit ullam aliquam sint. Aspernatur soluta perferendis tempora sequi consequuntur nesciunt maiores! Voluptatum nostrum blanditiis omnis suscipit reprehenderit corporis natus molestias pariatur, magni facere perspiciatis cupiditate veritatis sint. Amet officia a eveniet! Debitis sapiente error necessitatibus dicta.</p>
+                            </div>
                         </div>
-                
+                    </div>
                 </div>
 
-                <div class="swiper-slide">
-                    <div class="stars1"></div>
-                    <div class="stars2"></div>
-                    <div class="stars3"></div>
-                    
-                        <img src="img/waxingcrescent.png" alt="Waxing Crescent">
-                        <h1>Waxing Crescent</h1>
-                        <div class="body-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem eum recusandae reprehenderit iusto explicabo quis quisquam? Saepe, totam minima laudantium aspernatur consequuntur ipsa? Molestias, autem quos ipsam, quae expedita non sint quod earum voluptates repudiandae deserunt natus et? Maiores, ipsa et rerum ad animi repellendus itaque aperiam. Necessitatibus, deleniti!</p>
+                <div class="swiper-slide" data-hash="slide6">
+                    <div class="phase-wrapper">
+                        <div class="moon-wrapper">
+                            <img src="img/newmoon.png" alt="New Moon">
                         </div>
-                
+                        <div class="text-wrapper">
+                            <h1>New Moon</h1>
+                            <div class="body-text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequatur minus odit distinctio obcaecati eveniet ut molestias soluta sapiente quisquam eum exercitationem, tempore provident, fuga fugiat. Accusamus sed omnis consequuntur obcaecati, iusto, non at hic in quidem autem voluptatem voluptate explicabo ducimus, quibusdam corporis. Dicta dolorem beatae excepturi autem inventore?</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="swiper-slide">
-                    <div class="stars1"></div>
-                    <div class="stars2"></div>
-                    <div class="stars3"></div>
-                    
-                        <img src="img/firstquarter.png" alt="First Quarter">
-                        <h1>First Quarter</h1>
-                        <div class="body-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem eum recusandae reprehenderit iusto explicabo quis quisquam? Saepe, totam minima laudantium aspernatur consequuntur ipsa? Molestias, autem quos ipsam, quae expedita non sint quod earum voluptates repudiandae deserunt natus et? Maiores, ipsa et rerum ad animi repellendus itaque aperiam. Necessitatibus, deleniti!</p>
+                <div class="swiper-slide" data-hash="slide7">
+                    <div class="phase-wrapper">
+                        <div class="moon-wrapper">
+                            <img src="img/waxingcrescent.png" alt="Waxing Crescent">
                         </div>
-                
+                        <div class="text-wrapper">
+                            <h1>Waxing Crescent</h1>
+                            <div class="body-text">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab sunt quae architecto hic eum odit soluta alias. Necessitatibus magni illo eaque asperiores sint ipsam ea eos obcaecati? Voluptatem nulla dolores optio quae odio rem quibusdam cum, molestiae ea commodi eius vitae, velit facilis repellendus, quia doloribus ullam similique laboriosam recusandae.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    
-                <div class="swiper-slide">
-                    <div class="stars1"></div>
-                    <div class="stars2"></div>
-                    <div class="stars3"></div>
-                    
-                        <img src="img/waxinggibbous.png" alt="Waxing Gibbous">
-                        <h1>Waxing Gibbous</h1>
-                        <div class="body-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem eum recusandae reprehenderit iusto explicabo quis quisquam? Saepe, totam minima laudantium aspernatur consequuntur ipsa? Molestias, autem quos ipsam, quae expedita non sint quod earum voluptates repudiandae deserunt natus et? Maiores, ipsa et rerum ad animi repellendus itaque aperiam. Necessitatibus, deleniti!</p>
+
+                <div class="swiper-slide" data-hash="slide8">
+                    <div class="phase-wrapper">
+                        <div class="moon-wrapper">
+                            <img src="img/firstquarter.png" alt="First Quarter">
                         </div>
-            
+                        <div class="text-wrapper">
+                            <h1>First Quarter</h1>
+                            <div class="body-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error delectus voluptate, vel maiores ullam necessitatibus molestias. Soluta animi quos, deleniti consectetur, sunt consequatur aliquam fuga quaerat dicta, dolor quidem praesentium voluptatum exercitationem pariatur esse laboriosam id sint itaque labore. Suscipit, aspernatur facilis? Explicabo aliquam excepturi, incidunt corrupti nisi accusantium tempora.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" data-hash="slide9">
+                    <div class="phase-wrapper">
+                        <div class="moon-wrapper">
+                            <img src="img/waxinggibbous.png" alt="Waxing Gibbous">
+                        </div>
+                        <div class="text-wrapper">
+                            <h1>Waxing Gibbous</h1>
+                            <div class="body-text">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto exercitationem minus officia magni eligendi necessitatibus tempore tenetur asperiores reiciendis culpa at ullam molestias quae blanditiis eaque ipsa assumenda rem voluptas quisquam, excepturi praesentium atque labore laboriosam? Ipsum perferendis optio placeat, veniam esse similique eum quidem, quis incidunt quae hic aspernatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-        </div>
-
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
         </div>
+
+        <div class="stars-bg">
+            <div class="stars1"></div>
+            <div class="stars2"></div>
+            <div class="stars3"></div>
+        </div>
+
     </main>
 
     <footer>
         <div class="site-footer">
-            <ul>
-                <a href="#"><li>Link 1</li></a>
-                <a href="#"><li>Link 2</li></a>
-                <a href="#"><li>Link 3</li></a>
-                <a href="#"><li>Link 4</li></a>
-                <a href="#"><li>Link 5</li></a>
-                <a href="#"><li>Link 6</li></a>
-                <a href="#"><li>Link 7</li></a>
-                <a href="#"><li>Link 8</li></a>
-            </ul>
+            <a href="index.html"><img src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg" alt="NASA logo" width="75px"></a>
+            <p>National Aeronautics and Space Administration</p>
         </div>
     </footer>
 

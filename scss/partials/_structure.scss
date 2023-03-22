@@ -6,39 +6,33 @@ body {
 
 .swiper {
     width: 98vw;
-    height: 76vh;
+    height: 80vh;
     .swiper-slide {
         background-image: linear-gradient(#000, #130025);
     }
+    .swiper-slide-active {
+        opacity: 1;
+    }
 }
 
-/* SLIDE ONE */
+/* SLIDES */
 
 .swiper-slide {
 
     h1 {
-        margin-left: 6em;
         margin-top: 1em;
-    }
-        
-    img {
-        width: 500px;
-        position: absolute;
-        margin-top: 1em;
-        margin-left: 6em;
     }
 
     .body-text {
-        width: 1250px;
 
         p {
             font-family: $font-family-body;
             color: white;
-            margin-top: 3em;
-            margin-left: 35em;
+            max-width: 35em;
         }
     }
 }
+
 
 /* PAGINATION */
 
@@ -49,5 +43,22 @@ body {
 .swiper-pagination-bullet {
     background-color: $stars-color !important;
     padding: .5em;
+}
 
+/* MOON PHASES */
+
+.phase-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .moon-wrapper {
+        margin-right: 2%;
+        width: 30%;
+    }
+
+    .text-wrapper {
+        width: 50%;
+    }
 }
