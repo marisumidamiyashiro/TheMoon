@@ -6,7 +6,7 @@ const swiper = new Swiper('.swiper', {
     mousewheel: true,
     loop: true,
     effect: 'fade',
-    fadeEffects: {
+    fadeEffect: {
         crossFade: true
     },
     hashNavigation: {
