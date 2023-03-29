@@ -21,20 +21,59 @@
 
 <body>
 
+    <section>
+		<div id="preloader">
+			<div id="ctn-preloader" class="ctn-preloader">
+				<div class="animation-preloader">
+					<div class="spinner"></div>
+					<div class="txt-loading">
+						<span data-text-preloader="T" class="letters-loading">
+							T
+						</span>
+						
+						<span data-text-preloader="H" class="letters-loading">
+							H
+						</span>
+						
+						<span data-text-preloader="E" class="letters-loading">
+							E
+						</span>
+						
+						<span data-text-preloader="M" class="letters-loading">
+							M
+						</span>
+						
+						<span data-text-preloader="O" class="letters-loading">
+							O
+						</span>
+						
+						<span data-text-preloader="O" class="letters-loading">
+							O
+						</span>
+						
+						<span data-text-preloader="N" class="letters-loading">
+							N
+						</span>
+					</div>
+				</div>	
+				<div class="loader-section section-left"></div>
+				<div class="loader-section section-right"></div>
+			</div>
+		</div>
+	</section>
+
     <header class="home">
         <div class="site-header">
             <h1><a href="index.html">NASA</a>/ Moon Phases </h1>
-
             <ul>
-                <a href="#slide1" onclick="wiper.slideTo(1)"><li>The Moon</li></a>
-                <a href="#slide2" onclick="wiper.slideTo(2)"><li>Phase 1</li></a>
-                <a href="#slide3" onclick="wiper.slideTo(3)"><li>Phase 2</li></a>
-                <a href="#slide4" onclick="wiper.slideTo(4)"><li>Phase 3</li></a>
-                <a href="#slide5" onclick="wiper.slideTo(5)"><li>Phase 4</li></a>
-                <a href="#slide6" onclick="wiper.slideTo(6)"><li>Phase 5</li></a>
-                <a href="#slide7" onclick="wiper.slideTo(7)"><li>Phase 6</li></a>
-                <a href="#slide8" onclick="wiper.slideTo(8)"><li>Phase 7</li></a>
-                <a href="#slide9" onclick="wiper.slideTo(9)"><li>Phase 8</li></a>
+                <a href="#slide1" onclick="wiper.slideTo(1)"><li>Phase 1</li></a>
+                <a href="#slide2" onclick="wiper.slideTo(2)"><li>Phase 2</li></a>
+                <a href="#slide3" onclick="wiper.slideTo(3)"><li>Phase 3</li></a>
+                <a href="#slide4" onclick="wiper.slideTo(4)"><li>Phase 4</li></a>
+                <a href="#slide5" onclick="wiper.slideTo(5)"><li>Phase 5</li></a>
+                <a href="#slide6" onclick="wiper.slideTo(6)"><li>Phase 6</li></a>
+                <a href="#slide7" onclick="wiper.slideTo(7)"><li>Phase 7</li></a>
+                <a href="#slide8" onclick="wiper.slideTo(8)"><li>Phase 8</li></a>
             </ul>
         </div>
     </header>
@@ -42,18 +81,8 @@
     <main>
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" data-hash="slide1">
-                    <div class="phase-wrapper">
-                        <div class="moon-wrapper">
-                            <img src="img/fullmoon.png" alt="Full Moon">
-                        </div>
-                        <div class="text-wrapper">
-                            <h1>The Moon</h1>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide" data-hash="slide2">
+                <div class="swiper-slide" data-hash="slide1">
                     <div class="phase-wrapper">
                         <div class="moon-wrapper">
                             <img src="img/newmoon.png" alt="New Moon">
@@ -67,7 +96,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide" data-hash="slide3">
+                <div class="swiper-slide" data-hash="slide2">
                     <div class="phase-wrapper">
                         <div class="moon-wrapper">
                             <img src="img/waxingcrescent.png" alt="Waxing Crescent">
@@ -81,7 +110,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide" data-hash="slide4">
+                <div class="swiper-slide" data-hash="slide3">
                     <div class="phase-wrapper">
                         <div class="moon-wrapper">
                             <img src="img/firstquarter.png" alt="First Quarter">
@@ -95,7 +124,7 @@
                     </div>
                 </div>
                 
-                <div class="swiper-slide" data-hash="slide5">
+                <div class="swiper-slide" data-hash="slide4">
                     <div class="phase-wrapper">
                         <div class="moon-wrapper">
                             <img src="img/waxinggibbous.png" alt="Waxing Gibbous">
@@ -109,7 +138,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide" data-hash="slide6">
+                <div class="swiper-slide" data-hash="slide5">
                     <div class="phase-wrapper">
                         <div class="moon-wrapper">
                             <img src="img/fullmoon.png" alt="Full Moon">
@@ -123,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide" data-hash="slide7">
+                <div class="swiper-slide" data-hash="slide6">
                     <div class="phase-wrapper">
                         <div class="moon-wrapper">
                             <img src="img/waninggibbous.png" alt="Waning Gibbous">
@@ -137,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide" data-hash="slide8">
+                <div class="swiper-slide" data-hash="slide7">
                     <div class="phase-wrapper">
                         <div class="moon-wrapper">
                             <img src="img/lastquarter.png" alt="Last Quarter">
@@ -151,7 +180,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide" data-hash="slide9">
+                <div class="swiper-slide" data-hash="slide8">
                     <div class="phase-wrapper">
                         <div class="moon-wrapper">
                             <img src="img/waningcrescent.png" alt="Waning Crescent">
@@ -188,6 +217,7 @@
     </footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
