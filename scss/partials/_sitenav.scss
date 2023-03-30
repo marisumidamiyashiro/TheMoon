@@ -1,41 +1,94 @@
 .site-header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    padding: .5em;
     
     h1 {
-        font-size: 2em;
-        margin: .5em 0 0 0;
-        line-height: 1;
-        z-index: 10;
-        font-size: 1.5em;
+        font-size: clamp(1em, 2vw, 2em);
 
         a {
-            font-family: $font-family-title;
-            color: $stars-color;
             text-decoration: none;
+            color: $stars-color;
+        }
+    }
+}
+
+.site-nav {
+    display: flex;
+
+    .menu-button {
+        position: relative;
+        padding: .5em;
+        cursor: pointer;
+        z-index: 50;
+
+        svg {
+            fill: white;
+            rect {
+                transition: all .3s ease-out;
+            }
         }
     }
 
-    ul {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        z-index: 10;
+    h2, li {
+        font-size: 1em;
     }
-
-    a {
-        color: $stars-color;
-        text-decoration: none;
+    
+    ul {
+        z-index: 20;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
         list-style: none;
-        padding: .5em 1em 0 1em;
-        text-transform: uppercase;
-        font-family: $font-family-body;
-        line-height: 1em;
-        text-align: center;
+        line-height: 1;
+        transform: translate(100%,0);
+        transition: all .3s ease-out;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        padding: .5em;
+        color: $stars-color;
+        font-size: clamp(2em, 2vw, 2em);
+    }
+    &[data-navstate="open"] {
+        ul {
+            background-color: rgba(0, 0 ,0, 1);
+            transform: translate(0,0);
+        }
 
-        :hover {
-            color: rgba(255, 217, 0, 0.514);
+        .menu-button {
+            right: 1em;
+            position: fixed;
+            svg {
+                fill: white;
+            }
+        }
+        #menubar-top {
+            transform-origin: center;        
+            transform: translate(7px,7px) rotate(-45deg);        
+            }
+        
+        #menubar-mid {
+            opacity: 0;            
+            }  
+        
+        #menubar-bot {    
+            transform-origin: center;     
+            transform: translate(0,-4px) rotate(45deg);     
+        }   
+
+        li {
+            transform: translate(0,0);
+            opacity: 1;
         }
     }
 }

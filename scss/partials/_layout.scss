@@ -23,10 +23,28 @@ body {
     body {
         font-size: 100%;
     }
+
+    .site-nav {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: $stars-color !important;
+        padding: 1em;
+    }
+
 }
 
 @media (min-width: $breakpoint-medium) {
     body {
         font-size: 112.5%;
     }
+
+    .swiper-pagination-bullet {
+        background-color: $stars-color !important;
+        padding: 1.5em;
+    }
+
 }

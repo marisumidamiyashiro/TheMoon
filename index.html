@@ -65,16 +65,27 @@
     <header class="home">
         <div class="site-header">
             <h1><a href="index.html">NASA</a>/ Moon Phases </h1>
-            <ul>
-                <a href="#slide1" onclick="wiper.slideTo(1)"><li>Phase 1</li></a>
-                <a href="#slide2" onclick="wiper.slideTo(2)"><li>Phase 2</li></a>
-                <a href="#slide3" onclick="wiper.slideTo(3)"><li>Phase 3</li></a>
-                <a href="#slide4" onclick="wiper.slideTo(4)"><li>Phase 4</li></a>
-                <a href="#slide5" onclick="wiper.slideTo(5)"><li>Phase 5</li></a>
-                <a href="#slide6" onclick="wiper.slideTo(6)"><li>Phase 6</li></a>
-                <a href="#slide7" onclick="wiper.slideTo(7)"><li>Phase 7</li></a>
-                <a href="#slide8" onclick="wiper.slideTo(8)"><li>Phase 8</li></a>
-            </ul>
+            <nav class="site-nav" data-navstate="closed">
+                <h2 class="menu-button">
+                    <span class="hide-visually">Menu</span>
+                        <svg width="30" height="30">
+                        <title>Menu</title>
+                        <rect id="menubar-top" y="0" width="30" height="3"></rect>
+                        <rect id="menubar-mid" y="8" width="30" height="3"></rect>
+                        <rect id="menubar-bot" y="16" width="30" height="3"></rect>
+                        </svg>
+                    </h2>
+                <ul>
+                    <li><a href="#slide1" onclick="wiper.slideTo(1)"><li>Phase 1</li></a></li>
+                    <li><a href="#slide2" onclick="wiper.slideTo(2)"><li>Phase 2</li></a></li>
+                    <li><a href="#slide3" onclick="wiper.slideTo(3)"><li>Phase 3</li></a></li>
+                    <li><a href="#slide4" onclick="wiper.slideTo(4)"><li>Phase 4</li></a></li>
+                    <li><a href="#slide5" onclick="wiper.slideTo(5)"><li>Phase 5</li></a></li>
+                    <li><a href="#slide6" onclick="wiper.slideTo(6)"><li>Phase 6</li></a></li>
+                    <li><a href="#slide7" onclick="wiper.slideTo(7)"><li>Phase 7</li></a></li>
+                    <li><a href="#slide8" onclick="wiper.slideTo(8)"><li>Phase 8</li></a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 

@@ -1,0 +1,18 @@
+/* PAGINATION */
+
+.swiper-pagination {
+
+    margin-right: 1em;
+
+    :nth-child(1) {
+        background-color: $moon-base !important;
+    }
+
+    :nth-child(2) {
+        background-image: linear-gradient(#FFF, #130025);
+    }
+}
+
+.swiper-pagination-bullet {
+    background-color: $stars-color !important;
+}

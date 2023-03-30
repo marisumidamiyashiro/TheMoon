@@ -1,12 +1,14 @@
 body {
-    background-image: linear-gradient(#000, #130025);
+    background-image: linear-gradient(45deg, #000, #130025);
+    background-size: 400% 400%;
+	height: 100vh;
 }
 
 /* SWIPER */
 
 .swiper {
-    width: 98vw;
-    height: 80vh;
+    width: 100%;
+    height: 75vh;
 
 }
 
@@ -26,18 +28,6 @@ body {
             max-width: 35em;
         }
     }
-}
-
-
-/* PAGINATION */
-
-.swiper-pagination {
-    margin-right: 1em;
-}
-
-.swiper-pagination-bullet {
-    background-color: $stars-color !important;
-    padding: .5em;
 }
 
 /* MOON PHASES */
