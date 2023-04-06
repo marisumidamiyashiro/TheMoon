@@ -3,6 +3,7 @@
 .swiper-pagination {
 
     margin-right: 1em;
+    padding: 1em;
 
     :nth-child(1) {
         background-color: $moon-base !important;
@@ -15,4 +16,5 @@
 
 .swiper-pagination-bullet {
     background-color: $stars-color !important;
+    padding: 1em;
 }

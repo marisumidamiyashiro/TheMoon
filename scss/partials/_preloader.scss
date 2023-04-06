@@ -21,42 +21,43 @@
     top: 0;
 	width: 100%;
     z-index: 900;
-}
 
-.ctn-preloader .animation-preloader {
-	position: absolute;
-    z-index: 100;
-}
+    .animation-preloader {
+        position: absolute;
+        z-index: 100;
 
+        .spinner {
+            animation: spinner 1s infinite linear;
+            border-radius: 50%;
+            border: 5px solid $stars-color;
+            border-top-color: rgba(255, 255, 255, 0.2);
+            height: 9em;
+            margin: 0 auto 3.5em auto;
+            width: 9em;
+        }
 
-.ctn-preloader .animation-preloader .spinner {
-    animation: spinner 1s infinite linear;
-	border-radius: 50%;
-    border: 5px solid $stars-color;
-    border-top-color: rgba(255, 255, 255, 0.2);
-    height: 9em;
-    margin: 0 auto 3.5em auto;
-    width: 9em;
-}
+        .txt-loading {
+            font-family: $font-family-title;
+            font-weight: 700;
+            font-size: clamp(2em, 5vw, 5em);
+            text-align: center;
+            user-select: none;
 
+            .letters-loading:before {
+                animation: letters-loading 4s infinite;
+                color: #ffffff;
+                content: attr(data-text-preloader);
+                left: 0;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                transform: rotateY(-90deg);
+            }
+            
+        }
+        
+    }
 
-.ctn-preloader .animation-preloader .txt-loading {
-    font-family: $font-family-title;
-    font-weight: 700;
-    font-size: clamp(2em, 5vw, 5em);
-	text-align: center;
-	user-select: none;
-}
-
-.ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
-    animation: letters-loading 4s infinite;
-    color: #ffffff;
-    content: attr(data-text-preloader);
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transform: rotateY(-90deg);
 }
 
 .ctn-preloader .animation-preloader .txt-loading .letters-loading {
@@ -93,7 +94,7 @@
     height: 100%;
 	position: fixed;
     top: 0;
-    width: calc(50% + 1px);
+    width: 100%;
 }
 
 .ctn-preloader .loader-section.section-left {
@@ -111,13 +112,8 @@
 }
 
 
-.loaded .loader-section.section-left {
-    transform: translateX(-101%);
-    transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
-}
-
-.loaded .loader-section.section-right {
-    transform: translateX(101%);
+.loaded .loader-section {
+    transform: translateY(-101%);
     transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
 }
 
