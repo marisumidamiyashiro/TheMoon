@@ -10,7 +10,7 @@
     }
 
     :nth-child(2) {
-        box-shadow: inset -7px 0 0 0px $moon-base;
+        box-shadow: inset -9px 0 0 0px $moon-base;
     }
 
     :nth-child(3) {
@@ -65,7 +65,7 @@
 
     :nth-child(8) {
         transform: rotate(180deg);
-        box-shadow: inset -7px 0 0 0px $moon-base;
+        box-shadow: inset -9px 0 0 0px $moon-base;
     }
 }
 
