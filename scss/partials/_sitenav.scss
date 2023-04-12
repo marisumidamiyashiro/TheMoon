@@ -19,7 +19,7 @@
 
     .menu-button {
         position: relative;
-        padding: .5em;
+        padding: 1em;
         cursor: pointer;
         z-index: 50;
 
@@ -38,6 +38,8 @@
     ul {
         z-index: 20;
         position: fixed;
+        font-size: .6em;
+        text-transform: uppercase;
         width: 100%;
         height: 100vh;
         display: flex;
@@ -47,18 +49,23 @@
         top: 0;
         right: 0;
         margin: 0;
-        padding: 0;
         list-style: none;
         line-height: 1;
         transform: translate(100%,0);
         transition: all .3s ease-out;
     }
+    
     a {
+        font-family: $font-family-title;
         display: block;
         text-decoration: none;
-        padding: .5em;
+        padding: 1em;
         color: $stars-color;
         font-size: clamp(2em, 2vw, 2em);
+
+        &:hover {
+            color: $font-body-color;
+        }
     }
     &[data-navstate="open"] {
         ul {

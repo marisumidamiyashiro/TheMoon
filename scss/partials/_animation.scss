@@ -1,0 +1,34 @@
+.swiper-slide-active {
+    
+    .moon-wrapper {
+        animation: slide-in .8s ease-in-out both;
+    }
+    .text-wrapper {
+        animation: slide-left 1s ease-in-out;
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        filter: blur(40px);
+        transform: scaleY(2.5);
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        transform: scaleY(1);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -40,12 +40,23 @@ const swiper = new Swiper('.swiper', {
 // SITE-NAV
 
 const mymenubutton = document.querySelector('.menu-button');
-const mysitenav = document.querySelector('.site-nav');
+const mysitenav = document.querySelector('.site-header .site-nav');
 
-mymenubutton.onclick = function () {
-    if ( mysitenav.getAttribute('data-navstate') === 'open') {
+    mymenubutton.onclick = function () {
+        if ( mysitenav.getAttribute('data-navstate') === 'open') {
     mysitenav.setAttribute('data-navstate', 'closed');
     } else {
     mysitenav.setAttribute('data-navstate', 'open');
     }
-}
+};
+
+// OVERLAY NAV HIDE ON NAV ITEM CLICK
+var drawernavlinks = document.querySelectorAll(".drawer nav a");
+var drawerheader = document.querySelector(".drawer .site-nav");
+var j;
+for (j = 0; j < drawernavlinks.length; j++) {
+    drawernavlinks[j].onclick = function () {
+        drawerheader.setAttribute('data-navstate', 'closed');
+    };
+};
+
