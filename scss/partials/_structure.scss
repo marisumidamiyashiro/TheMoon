@@ -24,8 +24,9 @@ body {
 
         p {
             font-family: $font-family-body;
-            color: white;
+            color: $moon-base;
             max-width: 35em;
+            margin-top: 1em;
         }
     }
 }

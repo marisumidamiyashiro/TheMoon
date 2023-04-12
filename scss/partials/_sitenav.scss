@@ -1,10 +1,11 @@
 .site-header {
     display: flex;
     justify-content: space-between;
-    padding: .5em;
+    padding: 1em 0 0 1.5em;
     
     h1 {
         font-size: clamp(1em, 2vw, 2em);
+        z-index: 10;
 
         a {
             text-decoration: none;
@@ -98,7 +99,7 @@
     display: flex;
     align-items: center;
     font-family: $font-family-body;
-    padding: 1em;
+    padding: 2em;
     color: white;
 }
 

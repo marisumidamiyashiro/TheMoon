@@ -26,14 +26,36 @@
         position: absolute;
         z-index: 100;
 
-        .spinner {
-            animation: spinner 1s infinite linear;
+        .moon-preloader {
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            position: absolute;
+            top: calc(50% - 300px);
+            left: calc(50% - 100px);
+            clip-path: circle(100px, 100px, 100px);
+            clip-path: circle(100px at center);
             border-radius: 50%;
-            border: 5px solid $stars-color;
-            border-top-color: rgba(255, 255, 255, 0.2);
-            height: 9em;
-            margin: 0 auto 3.5em auto;
-            width: 9em;
+            background: #B5BCC6;
+            overflow: hidden;
+            
+                &:before, &:after {
+                border-radius: 50%;
+                content: "";
+                position: absolute;
+                top: -4%;
+                left: -4%;
+                height: 108%;
+                width: 108%;
+                }
+
+            &:before {
+                animation: before-fullmoon linear 3s infinite;
+            }
+
+            &:after {
+                animation: after-fullmoon linear 3s infinite;
+            }
         }
 
         .txt-loading {
@@ -97,15 +119,6 @@
     width: 100%;
 }
 
-.ctn-preloader .loader-section.section-left {
-    left: 0;
-}
-
-.ctn-preloader .loader-section.section-right {
-    right: 0;
-}
-
-
 .loaded .animation-preloader {
     opacity: 0;
     transition: 0.3s ease-out;
@@ -115,12 +128,6 @@
 .loaded .loader-section {
     transform: translateY(-101%);
     transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
-}
-
-@keyframes spinner {
-	to {
-		transform: rotateZ(360deg);
-	}
 }
 
 @keyframes letters-loading {
@@ -138,13 +145,93 @@
     }
 }
 
+@keyframes before-fullmoon {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.01%, 100% {
+        opacity: 0;
+    }
+    0%, 24.99% {
+        background: $background-color;
+    }
+    25%, 100% {
+        background: $moon-base;
+    }
+
+    0% {
+        box-shadow: inset 0 0 14px 0 $moon-base;
+    }
+    24.99% {
+        box-shadow: inset 110px 0 14px 0 $moon-base;
+    }
+    25% {
+        box-shadow: inset 110px 0 14px 0 $background-color;
+    }
+    50%, 100% {
+        box-shadow: inset 0 0 14px 0 $background-color;
+    }
+    0%, 50%, 100% {
+        border-radius: 50%;
+    }
+    20%, 30% {
+        border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+    }
+    25% {
+        border-radius: 0;
+    }
+    0%, 24.99% {
+        transform: rotate(0);
+    }
+    25%, 50%, 100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes after-fullmoon {
+    0%, 50% {
+        opacity: 0;
+    }
+    50.01%, 100% {
+        opacity: 1;
+    }
+    0%, 50%, 74.99% {
+        background: $moon-base;
+    }
+    75%, 100% {
+        background: $background-color;
+    }
+    0%, 50% {
+        box-shadow: inset 0 0 14px 0 $background-color;
+    }
+    74.99% {
+        box-shadow: inset 110px 0 14px 0 $background-color;
+    }
+    75% {
+        box-shadow: inset 110px 0 14px 0 $moon-base;
+    }
+    100% {
+        box-shadow: inset 0 0 14px 0 $moon-base;
+    }
+    0%, 50%, 100% {
+        border-radius: 50%;
+    }
+    70%, 80% {
+        border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+    }
+    75% {
+        border-radius: 0;;
+    }
+    0%, 50%, 74.99% {
+        transform: rotate(0);
+    }
+    75%, 100% {
+        transform: rotate(180deg);
+    }
+}
+
 
 @media screen and (max-width: 767px) {
-
-	.ctn-preloader .animation-preloader .spinner {
-		height: 8em;
-		width: 8em;
-	}
 
 	.ctn-preloader .animation-preloader .txt-loading {
 	    font-family: $font-family-title;
@@ -153,11 +240,6 @@
 }
 
 @media screen and (max-width: 500px) {
-
-	.ctn-preloader .animation-preloader .spinner {
-		height: 7em;
-		width: 7em;
-	}
 
 	.ctn-preloader .animation-preloader .txt-loading {
         font-family: $font-family-title;

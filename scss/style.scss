@@ -3,7 +3,8 @@
 
 $font-body-color: rgba(255, 255, 255, 1);
 $stars-color: rgba(255, 234, 194, 0.8);
-$moon-base: rgb(179, 179, 179, 1);
+$moon-base: rgba(179, 179, 179, 1);
+$background-color: #130025;
 
 /* FONTS */
 
@@ -18,7 +19,6 @@ $breakpoint-large: 1250px;
 
 /* IMPORTS */
 
-@import "partials/animation";
 @import "partials/toc";
 @import "partials/layout";
 @import "partials/media";
