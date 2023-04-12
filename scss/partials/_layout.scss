@@ -30,11 +30,6 @@ body {
         left: -9999px;
     }
 
-    .swiper-pagination-bullet {
-        background-color: $stars-color !important;
-        padding: 1.5em;
-    }
-
 }
 
 @media (min-width: $breakpoint-medium) {
@@ -42,9 +37,13 @@ body {
         font-size: 112.5%;
     }
 
-    .swiper-pagination-bullet {
-        background-color: $stars-color !important;
-        padding: 1.5em;
+    .phase-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+
     }
 
 }
