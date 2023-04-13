@@ -9,10 +9,6 @@ body {
     margin: 0 auto;
 }
 
-/* MEDIA QUERIES */
-
-/* RESPONSVIE TYPE */ 
-
 // SMALL
 
 body {
@@ -37,13 +33,22 @@ body {
         font-size: 112.5%;
     }
 
+}
+
+@media (max-width: $breakpoint-small) {
+
     .phase-wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        flex-direction: row;
-        height: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
 
+    .swiper-pagination {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
     }
 
 }
