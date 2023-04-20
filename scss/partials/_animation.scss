@@ -1,32 +1,54 @@
 .swiper-slide-active {
     
     .moon-wrapper {
-        animation: slide-in .5s ease-in-out both;
+        animation: tilt-in .7s ease-in-out both;
     }
     .text-wrapper {
-        animation: slide-left .5s ease-in-out;
+        animation: slide-left .6s ease-in-out;
     }
 }
 
 @keyframes slide-left {
     0% {
-        transform: translateX(100px);
+        transform: translateX(500px) translateY(800px) translateZ(1000px);
+        opacity: 0;
     }
     100% {
-        transform: translateX(0px);
+        transform: translateX(0px) translateY(0px) translateZ(0px);
+        opacity: 1;
     }
 }
 
 @keyframes slide-in {
     0% {
-        transform: scaleY(2.5);
-        transform: translateX(-400px);
         opacity: 0;
     }
 
     100% {
-        transform: scaleY(1);
-        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes roll-in {
+    0% {
+        transform: translateY(-800px) rotate(-540deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes tilt-in {
+    0% {
+        transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(50deg, -10deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateY(0deg) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
         opacity: 1;
     }
 }
