@@ -19,7 +19,7 @@
 
     .menu-button {
         position: relative;
-        padding: 1em;
+        padding-right: 1em;
         cursor: pointer;
         z-index: 50;
 
@@ -106,7 +106,7 @@
     display: flex;
     align-items: center;
     font-family: $font-family-body;
-    padding: 2em;
+    padding-left: 2em;
     color: white;
 }
 

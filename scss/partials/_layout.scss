@@ -39,7 +39,6 @@ body {
 
     .phase-wrapper {
         display: flex;
-        justify-content: flex-start;
         align-items: center;
         text-align: center;
         flex-direction: column;
@@ -47,10 +46,16 @@ body {
         h1 {
             text-align: center;
         }
+
     }
 
     .swiper-pagination {
+        top: 0;
         opacity: 0;
+    }
+
+    .site-footer {
+        padding: 0;
     }
 
 }
