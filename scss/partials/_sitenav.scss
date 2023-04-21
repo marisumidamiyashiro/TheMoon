@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     padding: 1em 0 0 1.5em;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     
     h1 {
         font-size: clamp(1em, 2vw, 2em);
@@ -108,5 +111,7 @@
     font-family: $font-family-body;
     padding-left: 2em;
     color: white;
+    position: fixed;
+    bottom: 0;
 }
 

@@ -5,6 +5,10 @@
     margin-right: 1em;
     padding: 1em;
 
+    &.swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 40px;
+    }
+
     :nth-child(1) {
         background-color: $background-color !important;
     }

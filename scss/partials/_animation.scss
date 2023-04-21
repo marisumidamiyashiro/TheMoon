@@ -1,16 +1,16 @@
 .swiper-slide-active {
     
     .moon-wrapper {
-        animation: roll-in .7s ease-in-out both;
+        animation: fade-in .7s ease-out both;
     }
     .text-wrapper {
-        animation: slide-left .6s ease-in-out;
+        animation: slide-left .6s ease-out;
     }
 }
 
 @keyframes slide-left {
     0% {
-        transform: translateX(500px) translateY(800px) translateZ(1000px);
+        transform: translateX(0px) translateY(50px);
         opacity: 0;
     }
     100% {
@@ -19,7 +19,7 @@
     }
 }
 
-@keyframes slide-in {
+@keyframes fade-in {
     0% {
         opacity: 0;
     }
