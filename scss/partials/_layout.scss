@@ -49,6 +49,13 @@ body {
 
     }
 
+    .swiper-slide-active {
+
+        .text-wrapper {
+            animation: slide-down .5s ease-out;
+        }
+    }
+
     .swiper-pagination {
         top: 0;
         opacity: 0;
