@@ -17,9 +17,8 @@ main {
 
 .swiper-slide {
 
-    h1 {
-        margin-top: 1em;
-    }
+    width: 50%;
+    z-index: -50;
 
     .body-text {
 
@@ -41,6 +40,27 @@ main {
     align-items: center;
     height: 100%;
 
+    .moon-phase {
+        position: absolute;
+        height: 100%;
+        right: 0;
+        
+        svg {
+            width: 750px;
+            height: 100%;
+
+            .large {
+                stroke: white;
+                fill: transparent;
+                stroke-width: 2px;
+                opacity: .4;
+
+            }
+
+        }
+
+    }
+
     h1 {
         letter-spacing: .1em;
     }
@@ -53,5 +73,17 @@ main {
     .text-wrapper {
         width: 50%;
         z-index: -10;
+
+        h2 {
+            display: flex;
+            position: absolute;
+            color: $moon-base;
+            font-size: clamp(4em, 6vw, 6em);
+            font-family: $font-family-overlay;
+            font-weight: 400;
+            font-style: normal;
+            opacity: .2;
+            right: 1em;
+        }
     }
 }

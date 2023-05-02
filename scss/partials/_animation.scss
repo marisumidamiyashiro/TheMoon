@@ -1,11 +1,27 @@
 .swiper-slide-active {
-    
-    // .moon-wrapper {
-    //     animation: slide-right .7s ease-out both;
-    // }
 
-    .text-wrapper {
+    h1, p {
         animation: slide-right .6s ease-out;
+    }
+
+    .large {
+        stroke-dasharray: 629;
+        stroke-dashoffset: 629;
+        animation: circle_large 2s linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+@keyframes circle_large {
+    from {
+    stroke-dashoffset: 629;
+    }
+    
+    to {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 10px;
+    stroke-dashoffset: 0;
     }
 }
 
