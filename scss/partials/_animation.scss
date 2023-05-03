@@ -5,7 +5,7 @@
 
     }
     h2 {
-        animation: focus-in-one .5s cubic-bezier(.55,.085,.68,.53) both;
+        animation: focus-in-two .5s cubic-bezier(.55,.085,.68,.53) both;
     }
 
     .moon {
@@ -65,5 +65,15 @@
     100% {
         filter:blur(0);
         opacity: 0.3;
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #fff, 0 0 30px #D7BDE2 , 0 0 40px #AF7AC5, 0 0 50px #AF7AC5, 0 0 60px #D7BDE2, 0 0 70px #D7BDE2;
+    }
+
+    to {
+        text-shadow: 0 0 30px #fff, 0 0 40px #D7BDE2 , 0 0 50px #AF7AC5, 0 0 60px #AF7AC5, 0 0 70px #D7BDE2, 0 0 80px #D7BDE2;
     }
 }

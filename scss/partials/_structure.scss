@@ -41,6 +41,7 @@ main {
 
     h1 {
         letter-spacing: .1em;
+        text-shadow: 0 0 20px $stars-color;
     }
 
     .moon-wrapper {
@@ -54,7 +55,7 @@ main {
 
         h2 {
             position: absolute;
-            color: rgba(53, 44, 56, 1);
+            color: $stars-color;
             font-size: clamp(4em, 6vw, 6em);
             font-family: $font-family-overlay;
             font-weight: 400;
@@ -62,7 +63,7 @@ main {
             letter-spacing: .1em;
             right: 1em;
             top: 1.5em;
-            z-index: -100;
+            opacity: 0.3;
         }
     }
 }
@@ -79,6 +80,8 @@ main {
     right: 0;
     margin: 5em;
     opacity: .3;
+    z-index: -100;
+    text-shadow: 0 0 40px 0 #0ff;;
 }
 
 .waxingc {
