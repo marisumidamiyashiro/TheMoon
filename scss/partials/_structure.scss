@@ -54,28 +54,82 @@ main {
 
         h2 {
             position: absolute;
-            color: rgba(53, 44, 56, 0.4);
+            color: rgba(53, 44, 56, 1);
             font-size: clamp(4em, 6vw, 6em);
             font-family: $font-family-overlay;
             font-weight: 400;
             font-style: normal;
             letter-spacing: .1em;
             right: 1em;
-            bottom: 4em;
+            top: 1.5em;
             z-index: -100;
         }
     }
 }
 
+/* MOON PHASES IN BACKGROUND */
+
 .moon {
     position: absolute;
-    border: 5px solid $moon-base;
-    width: 200px;
-    height: 200px;
+    border: 1px solid $moon-base;
+    width: 150px;
+    height: 150px;
     top: 0;
     border-radius: 100%;
     right: 0;
     margin: 5em;
-    opacity: .1;
+    opacity: .3;
+}
 
+.waxingc {
+    box-shadow: inset -45px 0 0 0px $moon-base;
+}
+
+.first {
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $moon-base;
+    }
+}
+
+.waxingg {
+    background: $moon-base;
+    box-shadow: inset 45px 0 0 0 $background-color;
+}
+
+.full {
+    background: $moon-base;
+}
+
+.waningg {
+    transform: rotate(180deg);
+    background: $moon-base;
+    box-shadow: inset 45px 0 0 0 $background-color;
+}
+
+.third {
+    transform: rotate(180deg);
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $moon-base;
+    }
+}
+
+.waningc {
+    transform: rotate(180deg);
+    box-shadow: inset -45px 0 0 0px $moon-base;
 }
