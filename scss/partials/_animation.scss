@@ -1,9 +1,5 @@
 .swiper-slide-active {
 
-    h1, p {
-        animation: slide-right .6s ease-out;
-
-    }
     h2 {
         animation: focus-in-two .5s cubic-bezier(.55,.085,.68,.53) both;
     }

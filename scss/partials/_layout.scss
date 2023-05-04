@@ -26,13 +26,27 @@ body {
         left: -9999px;
     }
 
+    .swiper-slide-active {
+        .text-wrapper {
+            h1, p {
+            animation: slide-right .6s ease-out;
+            }
+        }
+    }
+
 }
 
 @media (min-width: $breakpoint-medium) {
     body {
         font-size: 112.5%;
     }
-
+    .swiper-slide-active {
+        .text-wrapper {
+            h1, p {
+            animation: slide-right .6s ease-out;
+            }
+        }
+    }
 }
 
 @media (max-width: 800px) {
@@ -51,6 +65,10 @@ body {
 
         h1 {
             text-align: center;
+        }
+
+        .moon, h2 {
+            left: -9999px;
         }
 
     }
