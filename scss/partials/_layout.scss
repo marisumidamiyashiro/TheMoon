@@ -12,7 +12,7 @@ body {
 // SMALL
 
 body {
-    font-size: 87.5%;
+    font-size: 100%;
 }
 
 @media (min-width: $breakpoint-small) {
@@ -28,8 +28,10 @@ body {
 
     .swiper-slide-active {
         .text-wrapper {
-            h1, p {
-            animation: slide-right .6s ease-out;
+
+            h1,
+            p {
+                animation: slide-right .6s ease-out;
             }
         }
     }
@@ -40,10 +42,13 @@ body {
     body {
         font-size: 112.5%;
     }
+
     .swiper-slide-active {
         .text-wrapper {
-            h1, p {
-            animation: slide-right .6s ease-out;
+
+            h1,
+            p {
+                animation: slide-right .6s ease-out;
             }
         }
     }
@@ -70,7 +75,8 @@ body {
             text-align: center;
         }
 
-        .moon, h2 {
+        .moon,
+        h2 {
             left: -9999px;
         }
 
